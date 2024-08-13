@@ -11,7 +11,7 @@ const NotFoundPage = lazy(() => import("../../pages/NotFoundPage/NotFoundPage"))
 
 export default function App() {
     return (
-        <div>
+        <>
             <Navigation/>
             <Suspense fallback={<div>Loading...</div>}>
             <Routes>
@@ -24,7 +24,7 @@ export default function App() {
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             </Suspense>
-        </div>
+        </>
     );
     
 }

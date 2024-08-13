@@ -3,7 +3,7 @@ import MovieList from "../../components/MovieList/MovieList";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
-const API_KEY = "894144de8bbafe2709358c4db6342469"
+const API_KEY = "894144de8bbafe2709358c4db6342469";
 
 
 export default function MoviesPage() {

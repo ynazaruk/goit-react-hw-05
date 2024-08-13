@@ -5,7 +5,7 @@ import MovieList from "../../components/MovieList/MovieList";
 const API_KEY = "894144de8bbafe2709358c4db6342469"
 
 export default function HomePage() {
-    const [movies, setMovies] = useState(null)
+    const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState("")
 
