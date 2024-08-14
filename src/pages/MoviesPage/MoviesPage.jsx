@@ -31,7 +31,6 @@ useEffect(() => {
                 },
             });
             setMovies(response.data.results);
-            
         } catch (err) {
             setError("Error fetching movies", err)
         } finally {
@@ -43,7 +42,7 @@ useEffect(() => {
 
 
 const handleSearch = (event) => {
-    event.prevent.default();
+    event.preventDefault();
     const form = event.currentTarget;
     const formQuery = form.elements.search.value.trim();
 
